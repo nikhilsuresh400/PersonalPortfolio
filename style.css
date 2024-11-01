@@ -20,10 +20,6 @@ html, body {
     letter-spacing: 0.16vw;
 }
 
-body::selection {
-    background-color: red;
-}
-
 #main {
     display: flex;
     flex-direction: column;
@@ -193,7 +189,7 @@ body::selection {
     font-weight: 500;
     letter-spacing: 0.1vw;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
-    transition: all ease 0.32s;
+    transition: all ease 0.24s;
 }
 
 #button-container button:nth-child(1) {
@@ -273,7 +269,7 @@ body::selection {
 }
 
 #tools-grid {
-    border: solid 1px #e4e13d;
+    border: solid 1px #f9dc24;
 }
 
 #database-grid {
@@ -285,7 +281,7 @@ body::selection {
 #page3 {
     min-height: 100vh;
     width: 85%;
-    padding: 4.8vw 2vw;
+    padding: 4.8vw 2vw 0vw;
 }
 
 #page3 h1 {
@@ -294,3 +290,288 @@ body::selection {
     font-weight: bolder;
     color: #292B33;
 }
+
+#project-wrapper .project1 {
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    column-gap: 1vw;
+    border: solid 1px #FF5F5F;
+    border-radius: 5px;
+    margin-bottom: 4vw;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+}
+
+#project-wrapper .project2 {
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    column-gap: 1vw;
+    border: solid 1px #59d63a;
+    border-radius: 5px;
+    margin-bottom: 4vw;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+}
+
+#project-wrapper .project3 {
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    column-gap: 1vw;
+    border: solid 1px #f9dc24;
+    border-radius: 5px;
+    margin-bottom: 4vw;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+}
+
+#project-wrapper .project4 {
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    column-gap: 1vw;
+    border: solid 1px #645CFF;
+    border-radius: 5px;
+    margin-bottom: 4vw;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+}
+
+#project-wrapper .project-content {
+    padding-right: 8vw;
+}
+
+#project-wrapper .project-image img {
+    height: 20vw;
+    border-radius: 8px;
+}
+
+#project-wrapper .project-content h1 {
+    font-size: 3vw;
+    margin-bottom: 1vw;
+}
+
+#project-wrapper .project-content p {
+    color: #292B33;
+    font-size: 1vw;
+    margin-bottom: 4vw;
+}
+
+#project-wrapper #project1-button {
+    padding: 0.5vw 1vw;
+    color: #3C404B;
+    border: solid 1px #FF5F5F;
+    background-color: #ffeeee;
+    border-radius: 5px;
+    letter-spacing: 0.16vw;
+    outline: none;
+    font-size: 1vw;
+    font-weight: 400;
+    margin-bottom: 2vw;
+    letter-spacing: 0.1vw;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+    transition: all ease 0.24s;
+}
+
+#project-wrapper #project1-button:hover {
+    color: #fff;
+    background-color: #FF5F5F;
+}
+
+#project-wrapper #project2-button {
+    padding: 0.5vw 1vw;
+    color: #3C404B;
+    border: solid 1px #59d63a;
+    background-color: #edffe8;
+    border-radius: 5px;
+    letter-spacing: 0.16vw;
+    outline: none;
+    font-size: 1vw;
+    font-weight: 400;
+    margin-bottom: 2vw;
+    letter-spacing: 0.1vw;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+    transition: all ease 0.24s;
+}
+
+#project-wrapper #project2-button:hover {
+    color: #fff;
+    background-color: #59d63a;
+}
+
+#project-wrapper #project3-button {
+    padding: 0.5vw 1vw;
+    color: #3C404B;
+    border: solid 1px #f9dc24;
+    background-color: #fffcec;
+    border-radius: 5px;
+    letter-spacing: 0.16vw;
+    outline: none;
+    font-size: 1vw;
+    font-weight: 400;
+    margin-bottom: 2vw;
+    letter-spacing: 0.1vw;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+    transition: all ease 0.24s;
+}
+
+#project-wrapper #project3-button:hover {
+    color: #fff;
+    background-color: #f9dc24;
+}
+
+#project-wrapper #project4-button {
+    padding: 0.5vw 1vw;
+    color: #3C404B;
+    border: solid 1px #645CFF;
+    background-color: #efedff;
+    border-radius: 5px;
+    letter-spacing: 0.16vw;
+    outline: none;
+    font-size: 1vw;
+    font-weight: 400;
+    margin-bottom: 2vw;
+    letter-spacing: 0.1vw;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+    transition: all ease 0.24s;
+}
+
+#project-wrapper #project4-button:hover {
+    color: #fff;
+    background-color: #645CFF;
+}
+
+#project-wrapper .project i {
+    font-size: 1.4vw;
+    color: #656565;
+    cursor: pointer;
+    transition: all ease 0.24s;
+    margin-right: 0.8vw;
+}
+
+#project-wrapper .project1 i:hover {
+    color: #FF5F5F;
+}
+#project-wrapper .project2 i:hover {
+    color: #59d63a;
+}
+#project-wrapper .project3 i:hover {
+    color: #f9dc24;
+}
+#project-wrapper .project4 i:hover {
+    color: #645CFF;
+}
+
+/* Page 4 */
+#page4 {
+    min-height: 100vh;
+    width: 85%;
+    padding: 8vw 2vw 4vw;
+}
+
+#page4 h1 {
+    font-size: 4vw;
+    font-family: "Lora", serif;
+    font-weight: bolder;
+    color: #292B33;
+}
+
+#page4-flex {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+
+#page4-img {
+    padding: 4vw 0;
+}
+
+#page4-img img {
+    height: 20vw;
+    border-radius: 50%;
+}
+
+#page4-content {
+    padding-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page4-content p {
+    color: #292B33;
+    font-size: 1vw;
+}
+
+/* Page 5 */
+#page5 {
+    min-height: 100%;
+    width: 85%;
+    padding: 6vw 2vw 6vw;
+}
+
+#page5 h1 {
+    font-size: 4vw;
+    font-family: "Lora", serif;
+    font-weight: bolder;
+    color: #292B33;
+}
+
+#page5-flex {
+    width: 42%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page5-flex p {
+    text-align: center;
+    color: #292B33;
+    font-size: 1vw;
+    margin-bottom: 2vw;
+}
+
+#page5-flex button {
+    padding: 1vw 1.8vw;
+    color: #3C404B;
+    border: solid 1px #7e77ff;
+    border-radius: 5px;
+    letter-spacing: 0.16vw;
+    outline: none;
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+    transition: all ease 0.24s;
+}
+
+#page5-flex button:nth-child(1) {
+    background-color: #fff;
+}
+
+#page5-flex button:nth-child(2) {
+    background-color: #dedbff;
+}
+
+#page5-flex button:hover {
+    color: #fff;
+    background-color: #645CFF;
+}
+
+/* Footer */
+
+#footer {
+    padding: 1em 2em;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.6;
+    background-color: #d0ccff;
+    height: 100%;
+    width: 100%;
+}
+
+#footer p {
+    font-size: .8rem;
+    font-weight: 300;
+    margin-bottom: 1.5em;
+}
+
+/* Adding RESPONSIVENESS here */
