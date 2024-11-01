@@ -574,4 +574,57 @@ html, body {
     margin-bottom: 1.5em;
 }
 
+/* Loader */
+#loader {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.5s;
+}
+
+#loader-content {
+    width: 50%;
+    transition: all ease-out 0.3s;
+}
+
+#loader h1 {
+    font-size: 1.6vw;
+}
+
+#progress-bar {
+    height: 1vw;
+    width: 100%;
+    border: solid 2px #292B33;
+    overflow: hidden;
+    position: relative;
+}
+
+#progress-bar::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0%;
+    background-color: #292B33;
+    animation: loading ease-in-out 3s;
+}
+
+@keyframes loading {
+    0% {
+        right: 100%;
+    }
+    100% {
+        right: 0;
+    }
+}
+
 /* Adding RESPONSIVENESS here */
