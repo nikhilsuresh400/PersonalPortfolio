@@ -1,0 +1,296 @@
+/* Importing fonts here */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* font-family: "Ubuntu", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+/* font-family: "Lora", serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    font-family: "Ubuntu", sans-serif;
+    color: #3C404B;
+    letter-spacing: 0.16vw;
+}
+
+body::selection {
+    background-color: red;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Nav */
+#nav {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.4vw 2vw 0.6vw;
+}
+
+#nav img {
+    height: 4vw;
+    cursor: pointer;
+}
+
+#center-nav {
+    width: 19%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: 2vw;
+}
+
+#center-nav a {
+    text-decoration: none;
+    color: #3C404B;
+    font-size: 1vw;
+}
+
+#center-nav a:hover {
+    scale: 1.08;
+}
+
+#contact-button {
+    text-decoration: none;
+    font-size: 1vw;
+    font-weight: 500;
+    padding: 0.5vw 0.8vw;
+    border: solid 2px #3C404B;
+    border-radius: 30px;
+    color: #3C404B;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#contact-button:hover {
+    color: #fff;
+}
+
+#contact-button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    background-color: #3C404B;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all ease-in-out 0.2s;
+}
+
+#contact-button:hover::before {
+    bottom: 0;
+    border-radius: 0;
+}
+
+/* Page 1 */
+#page1 {
+    height: 100%;
+    width: 85%;
+    padding: 4.8vw 2vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8vw;
+}
+
+#page1 h1 {
+    font-size: 4vw;
+    font-family: "Lora", serif;
+    font-weight: bolder;
+    color: #292B33;
+}
+
+#intro-caption {
+    display: flex;
+    gap: 1vw;
+}
+
+#caption-wrapper {
+    position: relative;
+    height: 6em;
+    overflow: hidden;
+    width: 55%;
+}
+
+#caption-wrapper h1 {
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    text-align: left;
+    animation: slideshow 9s infinite;
+}
+
+#caption-wrapper h1:nth-child(1) {
+    animation-delay: 0s;
+    color: #645CFF;
+}
+
+#caption-wrapper h1:nth-child(2) {
+    animation-delay: 3s;
+    color: #FF5F5F;
+}
+
+#caption-wrapper h1:nth-child(3) {
+    animation-delay: 6s;
+    color: #59d63a;
+}
+
+@keyframes slideshow {
+    0%, 20% {
+        opacity: 0;
+    }
+    25%, 45% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+#social-container {
+    height: 3.4vw;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vw;
+    margin-bottom: 1.8vw;
+}
+
+#social-container i {
+    font-size: 2vw;
+    color: #656565;
+    cursor: pointer;
+}
+
+#social-container i:hover {
+    scale: 1.1;
+    color: #645CFF;
+}
+
+#button-container button {
+    padding: 1vw 1.8vw;
+    color: #3C404B;
+    border: solid 1px #7e77ff;
+    border-radius: 5px;
+    letter-spacing: 0.16vw;
+    outline: none;
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: 0.1vw;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+    transition: all ease 0.32s;
+}
+
+#button-container button:nth-child(1) {
+    background-color: #fff;
+}
+
+#button-container button:nth-child(2) {
+    background-color: #dedbff;
+}
+
+#button-container button:hover {
+    color: #fff;
+    background-color: #645CFF;
+}
+
+/* Page 2 */
+
+#page2 {
+    height: 100vh;
+    width: 85%;
+    padding: 4.8vw 2vw;
+}
+
+.wiggle {
+    height: 1.5vw;
+    width: 5.5vw;
+}
+
+#page2 h1 {
+    font-size: 4vw;
+    font-family: "Lora", serif;
+    font-weight: bolder;
+    color: #292B33;
+    margin-bottom: 2.8vw;
+}
+
+#mystack-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1vw;
+}
+
+#mystack-grid .grid {
+    text-align: center;
+    height: 22vw;
+    padding: 2vw 2.4vw;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+}
+
+#mystack-grid h3 {
+    font-size: 1vw;
+}
+
+#mystack-grid .grid .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+#mystack-grid .grid .flex h3 {
+    text-align: left;
+    padding-left: 4vw;
+    font-weight: 400;
+}
+
+#mystack-grid .grid .flex i{
+    margin-right: 0.5vw;
+}
+
+#technologies-grid {
+    border: solid 1px #FF5F5F;
+}
+
+#libraries-grid {
+    border: solid 1px #59d63a;
+}
+
+#tools-grid {
+    border: solid 1px #e4e13d;
+}
+
+#database-grid {
+    border: solid 1px #645CFF;
+}
+
+/* Page 3 */
+
+#page3 {
+    min-height: 100vh;
+    width: 85%;
+    padding: 4.8vw 2vw;
+}
+
+#page3 h1 {
+    font-size: 4vw;
+    font-family: "Lora", serif;
+    font-weight: bolder;
+    color: #292B33;
+}
